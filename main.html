@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Uma carta para você 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#fff5f5;--bg2:#ffe3e8;--card:#fffdf8;--red:#c8102e;--gold:#c9a227;--gold2:#f3d77a;--ink:#5a1a24;--mut:#8a4b55;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg1:#2a0a12;--bg2:#4a0f1c;--card:#3a1220;--red:#ff5c77;--gold:#f3d77a;--gold2:#c9a227;--ink:#fff1e6;--mut:#f0c9cf}}
+:root[data-theme=dark]{--bg1:#2a0a12;--bg2:#4a0f1c;--card:#3a1220;--red:#ff5c77;--gold:#f3d77a;--gold2:#c9a227;--ink:#fff1e6;--mut:#f0c9cf}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(160deg,var(--bg1),var(--bg2));color:var(--ink);font:17px/1.7 Quicksand,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden;text-align:center}
+h1,h2,.sc{font-family:"Dancing Script","Segoe Script",cursive,serif;color:var(--red);font-weight:700;margin:0}
+.fl{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.fl i{position:absolute;bottom:-40px;font-style:normal;animation:up linear infinite;opacity:.7}
+@keyframes up{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1;max-width:640px;margin:auto;padding:28px 18px 60px}
+.sec{display:none;animation:in .8s ease both}.sec.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(16px)}}
+.env{margin:40px auto 10px;width:240px;height:160px;position:relative;cursor:pointer;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.env .b{position:absolute;inset:0;background:linear-gradient(135deg,#fff,#ffe9ec);border:3px solid var(--gold);border-radius:10px;box-shadow:0 10px 30px #c8102e33}
+.env .f{position:absolute;left:0;right:0;top:0;height:90px;background:linear-gradient(#fff,#ffd7de);clip-path:polygon(0 0,100% 0,50% 100%);border-radius:10px 10px 0 0}
+.env .h{position:absolute;left:50%;top:62px;transform:translateX(-50%);font-size:38px;filter:drop-shadow(0 2px 4px #0003)}
+h1{font-size:clamp(34px,8vw,52px);line-height:1.15}
+.sub{color:var(--mut)}
+.card{background:var(--card);border:2px solid var(--gold);border-radius:22px;padding:28px 22px;margin:18px 0;box-shadow:0 12px 34px #c8102e26;position:relative}
+.card::before,.card::after{content:"❤";position:absolute;color:var(--gold);font-size:18px}.card::before{top:8px;left:14px}.card::after{bottom:8px;right:14px}
+.card h2{font-size:34px;margin-bottom:8px}.card p{margin:10px 0}
+.div{color:var(--gold);letter-spacing:8px;margin:6px 0}
+button{font:inherit;font-weight:600;border:0;border-radius:999px;padding:13px 28px;cursor:pointer;transition:transform .2s}
+.bt{background:linear-gradient(135deg,var(--red),#e0455d);color:#fff;box-shadow:0 6px 18px #c8102e55}.bt:hover{transform:scale(1.06)}
+.bg{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#4a2f00}
+.ask{min-height:140px;position:relative;margin-top:18px}
+#no{position:relative;background:transparent;border:2px solid var(--gold);color:var(--mut)}
+.big{font-size:70px;animation:bob 1.6s ease-in-out infinite}
+.nav{margin-top:14px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head><body>
+<div class="fl" id="fl"></div>
+<main>
+<section class="sec on" id="s0"><div class="big">💌</div><h1>Chegou uma carta de Patrick<br>para você</h1><p class="sub">Escrita com o coração, só para o seu.</p><div class="env" onclick="go(1)"><div class="b"></div><div class="f"></div><div class="h">❤️</div></div><p class="sub">Toque no envelope para abrir</p></section>
+
+<section class="sec" id="s1"><h1>Meu amor,</h1><div class="card"><h2>Antes de tudo...</h2><p>Eu preciso te dizer o quanto você é importante para mim. Você é o meu lugar favorito no mundo, o meu abraço de casa, a pessoa que faz os meus dias terem mais cor e mais graça.</p><p>Ao seu lado, até as coisas simples viram especiais. O seu sorriso me acalma, a sua risada me alegra e o seu carinho me faz querer ser alguém melhor, todos os dias.</p><div class="div">♥ ♥ ♥</div><p><b>Eu te amo. Muito, e de verdade.</b></p></div><div class="nav"><button class="bt" onclick="go(2)">Continuar 💕</button></div></section>
+
+<section class="sec" id="s2"><div class="card"><h2>Mas eu preciso ser sincero</h2><p>Eu sei que errei. Sei que te magoei, e não quero me esconder atrás de desculpas, porque você merece respeito e honestidade.</p><p>Pensei muito em tudo o que aconteceu. Me dói saber que fiz você sofrer, e é a última coisa que eu desejo para quem eu amo tanto.</p><div class="div">✦ ✦ ✦</div><p>Eu assumo a minha parte, escuto o que você sentiu e quero aprender com cada erro. Não prometo ser perfeito(a), mas prometo me esforçar de verdade, com atitudes, não só com palavras.</p></div><div class="nav"><button class="bt" onclick="go(3)">Continuar 💗</button></div></section>
+
+<section class="sec" id="s3"><div class="card"><h2>Os meus pedidos</h2><p>Eu te peço <b>perdão</b>, do fundo do coração.</p><p>Te prometo mais paciência, mais cuidado com as palavras, mais presença e mais carinho. E prometo nunca deixar de te dizer o quanto você importa.</p><p>Escolher você é a melhor decisão que eu tomo, todos os dias.</p></div><div class="nav"><button class="bt" onclick="go(4)">Uma última pergunta 💍</button></div></section>
+
+<section class="sec" id="s4"><div class="big">🥺</div><h1>Você me perdoa?</h1><p class="sub">Eu te amo e quero recomeçar, passo a passo, ao seu lado.</p><div class="ask" id="ask"><button class="bt bg" onclick="yes()">Sim, eu perdoo 💖</button> <button id="no" onmouseover="run()" ontouchstart="run(event)" onclick="run()">Não...</button></div></section>
+
+<section class="sec" id="s5"><div class="big">🥰</div><h1>Obrigado(a), meu amor!</h1><div class="card"><p>Você acabou de me deixar a pessoa mais feliz do mundo. Eu vou cuidar de você, de nós e do nosso amor com todo o carinho que existe.</p><div class="div">♥ ♥ ♥</div><p class="sc" style="font-size:32px">Te amo hoje, amanhã e sempre.</p></div><div class="nav"><button class="bt" onclick="burst()">Mais corações 💞</button></div></section>
+</main>
+<script>
+function go(n){document.querySelectorAll('.sec').forEach((s,i)=>s.classList.toggle('on',i==n));scrollTo({top:0,behavior:'smooth'});burst(8)}
+const E=['❤','💖','💕','✨','💗','🤍'];
+function heart(c){const i=document.createElement('i');i.textContent=E[Math.floor(Math.random()*E.length)];i.style.left=Math.random()*100+'%';i.style.fontSize=(14+Math.random()*26)+'px';i.style.animationDuration=(6+Math.random()*8)+'s';if(c)i.style.animationDelay='0s';document.getElementById('fl').appendChild(i);setTimeout(()=>i.remove(),15000)}
+function burst(n){for(let k=0;k<(n||40);k++)setTimeout(()=>heart(1),k*40)}
+setInterval(()=>heart(),900);for(let k=0;k<8;k++)setTimeout(heart,k*300);
+let t=0;function run(e){if(e&&e.preventDefault)e.preventDefault();const b=document.getElementById('no'),a=document.getElementById('ask').getBoundingClientRect();t++;b.style.position='absolute';b.style.left=Math.max(0,Math.random()*(a.width-110))+'px';b.style.top=Math.max(0,Math.random()*(a.height-30))+'px';b.textContent=['Não...','Tem certeza?','Pensa de novo 🥺','Por favor 💔','Eu te amo!'][Math.min(t,4)]}
+function yes(){go(5);burst(70)}
+</script></body></html>
